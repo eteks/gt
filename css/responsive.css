@@ -1,0 +1,351 @@
+@media only screen and (max-width: 767px) {
+body {
+	font-size: 13px;
+	background: none;
+}
+.logo-responsive.logo {
+	display: block;
+}
+.container {
+	width: 100%;
+	padding: 0 15px 0 15px !important
+}
+h1, .h1 {
+	font-size: 30px;
+	margin: 40px 0;
+	
+}
+h3, .h3 {
+	font-size: 17px;
+}
+.technologies h5 {
+	font-size: 10px;
+}
+p {
+	line-height: normal;
+	margin-bottom: 25px;
+	text-align:left;
+}
+.header {
+	background-image: none;
+	background-color: #fff;
+	position: fixed;
+	width: 43px;
+	left: 0;
+	top: 0;
+	height: 100%;
+	z-index: 100;
+}
+.container, .container-fluid {
+	padding: 0
+}
+.logo-responsive {
+	display: block;
+	position: fixed;
+	left: 0;
+	width: 43px;
+	text-align: center;
+}
+.share {
+	top: 90%;
+}
+.logo {
+	top: 5%;
+}
+.logo-map {
+	top: 65%;
+}
+.fullpage-wrapper {
+	margin-left: 43px;
+}
+.section-mobile-home, .section-mobile-webdesign, .section-mobile-app-mobile, .section-mobile-ebul, .section-mobile-steps {
+	display: table !important;
+}
+.container-inside{padding:0}
+.section-portfolio .cols {
+	width: 52%;
+}
+.section-portfolio .cols:nth-child(even) {
+	width: 48%;
+}
+.section-portfolio .full-image {
+	height: 125px; 
+	}
+
+/* for responsive img -technology page*/
+	
+/*
+ @media(max-width:768px){ .thumbnail technologies, .img-responsive{display:block;
+max-width:100%;
+height:auto;
+} 
+
+*/
+
+@media(max-width:768px) { h2.title-technologies
+   {
+	font-size: 32px;
+	padding: 0 15%;
+    top: 95px;
+   } }
+	
+@media(max-width:768px) { h3.title-technologies
+  { font-size: 20px;
+    padding: 0 29%;
+    top: 160px;
+  } }
+   
+ @media(max-width:768px){ h4.title-technologies
+ { font-size: 12px;
+    padding: 0 16%;
+    top: 190px;
+  }
+}
+
+ @media(max-width:768px){ .slider-pro a.button-hold
+ {
+    border: 2px solid #fff;
+    border-radius: 3px;
+    color: #fff;
+    display: inline-block;
+    height: 45px;
+    left: 97px;
+    line-height: 47px;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 245px;
+    width: 128px;
+    z-index: 1;
+   }
+  }
+#section5 .sp-mask {
+	position: relative;
+	overflow: hidden;
+	height:648px !important;
+}  
+ 
+  
+  
+/*----*/
+
+.navigation {
+	top: 31%;
+	height:auto;
+}
+.button-toggle {
+	width: 43px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.button-toggle .icon-bar {
+	height: 2px;
+}
+.navi {
+	position:fixed;
+	top:-5px;
+	width:100%;
+	height:100%;
+	padding-top:56%;
+	font-size:20px;
+	
+background: url(../images/banner-header.jpg) no-repeat center top / cover;
+left:42px
+}
+.title-mobile-h1 {
+	margin: 25px 0;
+}
+.logo-mobile {
+	display: inline-block;
+}
+.logo-mobile img {
+	width: 200px;
+}
+.title-mobile-h3 {
+	color: #0c90e9;
+	font-size: 38px;
+	margin: 0
+}
+.small-text {
+	color: #fff;
+}
+.section-mobile-webdesign .fp-tableCell {
+	vertical-align: top;
+}
+.footer {
+	display:block;
+}
+.client-container li {
+	width: 48%;
+	padding: 0 15px;
+	float: none;
+	display: inline-block;
+	vertical-align: middle;
+}
+.client-container li img {
+	width: 100%;
+}
+.slide-background {
+	background-size: cover;
+}
+.slider-pro .slide-webdesign img.sp-image, .slider-pro .slide-webdesign img.sp-thumbnail {
+	width: auto !important;
+	height: 55% !important;
+	/*margin-top:0 !important;*/
+	margin-left: 0 !important;
+	position: absolute !important;
+	top: -15% !important;
+	left: -50px !important;
+}
+.slider-pro .slide-webdesign {
+	overflow: hidden;
+}
+.slider-pro .slide-mobile img.sp-image, .slider-pro .slide-mobile img.sp-thumbnail {
+	width: auto !important;
+	height: 180px !important;
+	/*margin-top:0 !important;*/
+	margin-left: 0 !important;
+	position: absolute !important;
+	bottom: 37% !important;
+	left: 15px !important;
+	margin-top: 0 !important;
+}
+.slider-pro .slider-title {
+	font-size: 29px !important;
+	position: absolute !important;
+	top: 0 !important;
+	left: 0 !important;
+	width: 100% !important;
+	text-align: center;
+}
+.slider-pro .slide-webdesign .slider-para {
+	font-size: 12px !important;
+	line-height: 14px !important;
+	top: 32% !important;
+	left: 0 !important;
+	font-size: 12px !important;
+	width: calc(100% - 30px);
+	margin-left: 15px;
+	width: 100% !important;
+	height: auto !important;
+}
+.slider-pro .slide-mobile .slider-para {
+	font-size: 12px !important;
+	line-height: 14px !important;
+	top: 15% !important;
+	left: 0 !important;
+	font-size: 12px !important;
+	width: calc(100% - 30px);
+	margin-left: 15px;
+	width: 100% !important;
+	height: auto !important;
+}
+.slider-pro .slide-tablet .slider-para {
+	font-size: 12px !important;
+	line-height: 14px !important;
+	top: 15% !important;
+	left: 0 !important;
+	font-size: 12px !important;
+	width: calc(100% - 30px);
+	margin-left: 15px;
+	width: 100% !important;
+	height: auto !important;
+}
+.slider-pro .slide-tablet img.sp-image, .slider-pro .slide-tablet img.sp-thumbnail {
+	width: auto !important;
+	height: 320px !important;
+	/*margin-top:0 !important;*/
+	margin-left: 0 !important;
+	position: absolute !important;
+	bottom: 37% !important;
+	left: 15px !important;
+	margin-top: 0 !important;
+}
+.section-home-mobile {
+	margin-left: 20px;
+	text-align: center;
+}
+.logo-mobile img {
+	width: 200px;
+}
+.title-mobile-h1 {
+	margin: 25px 0
+}
+.title-mobile-h3 {
+	color: #0c90e9;
+	font-size: 38px;
+	margin: 0
+}
+.logo-mobile {
+	display: inline-block;
+}
+.small-text {
+	color: #fff;
+	text-align: center;
+}
+.section-getintouch {
+	color: #fff;
+	padding: 0 15px;
+}
+.section-getintouch .fp-tableCell {
+	vertical-align: top;
+}
+.section-getintouch {
+	text-align: left !important
+}
+.section-getintouch.active {
+	text-align: left !important;
+	position:fixed;
+	top:0;
+	z-index:1000;
+	display:table !important;
+}
+.page-share.active {
+
+	position:fixed;
+	top:0;
+	z-index:1000;
+	display:table !important;
+}
+
+address {
+	font-style: normal;
+	line-height: 18px;
+	text-align: left;
+}
+.section-getintouch address a {
+	margin: 15px 0;
+	display: inline-block;
+	color: #ffffff;
+}
+	
+.client-container {
+	margin-bottom: 0
+}
+.section-technologies .cols-6{
+	width:100%;
+	
+	}
+.section-technologies .cols-3{
+	width:50%;
+	
+	}	
+.share-icon-container{margin:0 0}	
+.share-icon-container .share-icon{
+	padding:0 15px;
+	}
+.page-share	{}
+.map.active{
+	display:block !important;
+	position:fixed;
+	top:0;
+	left:0;
+	}
+.section-getintouch h1.active,.section-getintouch address.active,.section-getintouch .form-contact.active{
+	display:none !important;
+	}	
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation:landscape) {
+}

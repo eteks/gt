@@ -1,0 +1,453 @@
+<!doctype html>
+<html>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<title>::Globalen Solutions::</title>
+	<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+	<link rel="stylesheet" type="text/css" href="css/slider-pro.min.css">
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
+	<script src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript" src="js/jquery.sliderPro.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('.button-toggle').click(function(){
+				$('.navi').addClass('active');
+				
+				});
+			$('.navi li a').click(function(){
+				$('.navi').removeClass('active');
+				});	
+				
+			$('.button-map').click(function(){
+				$('.map').addClass('active');
+				$('.section-getintouch h1,.section-getintouch address,.section-getintouch .form-contact ').addClass('active');
+				});
+		
+				
+			$('#fullpage').fullpage({
+				//sectionsColor: ['#1bbc9b', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['mobile-home1','mobile-home2','mobile-home3','mobile-home4','mobile-home5','home', 'about', 'portfolio',  'team','technologies','clients'],
+				menu: '#menu',
+				css3: true,
+				scrollingSpeed: 1000,
+				autoScrolling: false,
+				fitToSection: false
+			});
+			
+			$( '.slider-pro' ).sliderPro({
+			width: '100%',
+			height: 656,
+			visibleSize: '100%',
+			//forceSize: 'fullWidth',
+			arrows: true,
+			buttons: false,
+			loop: false,
+			
+			autoplay: true,
+			autoScaleLayers: true,
+			breakpoints: {
+				320: {
+					height: 600,
+				},
+				
+			}
+			
+		});	
+$( '.section-technologies .slider-pro' ).sliderPro({
+			width: '100%',
+			height: 600,
+			visibleSize: '100%',
+			//forceSize: 'fullWidth',
+			arrows: false,
+			button: true,
+			loop: false,
+			
+			autoplay: true,
+			autoScaleLayers: true,
+			
+		});
+	$('.logo-responsive.logo-map').click(function(){
+			$('.section-getintouch').addClass('active');			
+			$('.page-share').removeClass('active');			
+			
+			});
+		
+		$('.logo-responsive.share').click(function(){
+			$('.page-share').addClass('active');			
+			$('.section-getintouch').removeClass('active');			
+			});
+				
+			$('.button-back').click(function(){
+					$('.map').removeClass('active');
+				$('.section-getintouch h1,.section-getintouch address,.section-getintouch .form-contact ').removeClass('active');
+				});			
+			
+		
+		});
+	</script>
+	</head>
+
+	<body>
+<header class="header">
+      <div class="container-fluid"> <a href="index.html" class="logo-responsive logo"><img src="images/logo-mobile.png" alt="logo-mobile.png"></a>
+    <nav class="navigation">
+          <div class="button-toggle"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </div>
+          <ul id="menu" class="navi">
+        <li data-menuanchor="mobile-home1" class="hide-navi"><a href="#mobile-home1">Mobile-HOME</a></li>
+        <li data-menuanchor="mobile-home2" class="hide-navi"><a href="#mobile-home2">Mobile-HOME</a></li>
+        <li data-menuanchor="mobile-home3" class="hide-navi"><a href="#mobile-home3">Mobile-HOME</a></li>
+        <li data-menuanchor="mobile-home4" class="hide-navi"><a href="#mobile-home4">Mobile-HOME</a></li>
+        <li data-menuanchor="mobile-home5" class="hide-navi"><a href="#mobile-home5">Mobile-HOME</a></li>
+                                
+        <li data-menuanchor="home"><a href="#home">HOME</a></li>
+        <li data-menuanchor="about"><a href="#about">ABOUT</a></li>
+        <li data-menuanchor="portfolio"><a href="#portfolio">PORTFOLIO</a></li>
+        <li data-menuanchor="technologies"><a href="#technologies">TECHNOLOGIES</a></li>
+        <li data-menuanchor="team"><a href="#team">TEAM</a></li>
+        <li data-menuanchor="clients"><a href="#clients">CLIENTS</a></li>
+      </ul>
+        </nav>
+    <div class="navi-close-button"> <span class="icon-bar"></span> <span class="icon-bar"></span> </div>
+  </div>
+      <a  class="logo-responsive logo-map" href="#"><img src="images/icon-map.png" alt="icon-map.png"></a> <a  class="logo-responsive share" href="#"><img src="images/icon-share.png" alt="icon-share.png"></a> </header>
+<div id="fullpage">
+      <div class="page-section section-mobile-home  section"> <a href="index.html" class="logo-mobile"><img src="images/Logo-gloalen.png" ></a>
+    <h1 class="title-mobile-h1">One Click</h1>
+    <h3 class="title-mobile-h3">EXPLORER <br>
+          OUR DIGITAL</h3>
+    <p class="small-text">Providing the Progressive<br/> Business Solutions</p>
+  </div>
+      <div class="page-section section-mobile-webdesign  section">
+    <ul class="list-web">
+          <li>DEVELOPMENT</li>
+          <li>SEO</li>
+          <li>RESEARCH</li>
+          <li>NETWORKING</li>
+          <li>PLAN</li>
+          <li>SOCIAL MEDIA</li>
+          <li>CONCEPT</li>
+          <li>CONTENT MANAGEMENT</li>
+        </ul>
+    <img src="images/img-webdesign.png"  class="img-web-mobile"> <a href="#" class="icon-scroll-bottom"><img src="images/mobile-bottom-scroll.png" alt="mobile-bottom-scroll.png"></a> </div>
+      <div class="page-section section-mobile-app-mobile  section">
+    <div class="mobile-app">
+          <h3>MOBILE</h3>
+          <h4>APPS</h4>
+          <p>Create a unique apps in<br>
+        a few clicks</p>
+        </div>
+    <a href="#" class="icon-scroll-bottom"><img src="images/mobile-bottom-scroll.png" alt="mobile-bottom-scroll.png"></a> </div>
+      <div class="page-section section-mobile-ebul section">
+    <div class="mobile-app static-position">
+          <h3>E PUBLISHING</h3>
+          <h4>LEARNING</h4>
+          <p>HAS NEVER BEEN SO</p>
+        </div>
+    <a href="#" class="icon-scroll-bottom"><img src="images/mobile-bottom-scroll.png" alt="mobile-bottom-scroll.png"></a> </div>
+      <div class="page-section section-mobile-steps section">
+    
+    <a href="#" class="icon-scroll-bottom"><img src="images/mobile-bottom-scroll.png" alt="mobile-bottom-scroll.png"></a> </div>
+      <div class="page-section section-home  section" id="section1">
+    <div  class="slider-pro">
+          <div class="sp-slides">
+        <div class="sp-slide slide-background slide-webdesign"> <img class="sp-image" src="../src/css/images/blank.gif"
+	        		data-src="images/banner1.png"
+	        		data-retina="images/banner1.png"/>
+              <h2 class="sp-layer sp-padding  slider-title" 
+					data-horizontal="650" data-vertical="28%" 
+					data-show-transition="left" data-show-delay="200" data-hide-transition="left" data-hide-delay="200" data-width="440">WEB DESIGN &amp; DEVELOPMENT</h2>
+              <p class="sp-layer sp-black sp-padding slider-para" 
+					data-horizontal="650" data-vertical="52%" data-width="580"  data-height="244" 
+					data-show-transition="left" data-show-delay="800" data-hide-transition="left" data-hide-delay="500">Globalensolutions is a new class of software concern
+            committed to catalyzing the competence and
+            competitiveness of its clients by helping them succeed through
+            the power of information technology. Driven by the credo that
+            solutions are effective only when organizational needs are
+            accurately ascertain and aptly addressed;. We have varied
+            and extensive expertise in software development, web portal
+            development, application software development, etc.</p>
+            </div>
+       <!-- <div class="sp-slide slide-background slide-mobile"> <img class="sp-image" src="../src/css/images/blank.gif"
+	        		data-src="images/banner2.png"
+	        		data-retina="images/banner2.png" />
+              <h2 class="sp-layer sp-padding  slider-title" 
+					data-horizontal="650" data-vertical="28%" 
+					data-show-transition="left" data-show-delay="200" data-hide-transition="left" data-hide-delay="200" data-width="440">Mobile
+            Application</h2>
+              <p class="sp-layer sp-black sp-padding slider-para" 
+					data-horizontal="650" data-vertical="52%" data-width="580"  data-height="244" 
+					data-show-transition="left" data-show-delay="800" data-hide-transition="left" data-hide-delay="500"> Globalensolutions is an organization focused on providing
+            cost-effective mobile applications. From iPhone applications
+            to iPad applications to HTML5 applications our company
+            delivers all mobile applications and mobile websites on every
+            platform. will put you in front of your customers on devices
+            they access most with information and tools that make it easy
+            for us to connect with their mobile audience. </p>
+            </div>
+        <div class="sp-slide slide-background slide-tablet"> <img class="sp-image" src="../src/css/images/blank.gif"
+	        		data-src="images/banner3.png"
+	        		data-retina="images/banner3.png" />
+              <h2 class="sp-layer sp-padding  slider-title" 
+					data-horizontal="50" data-vertical="1%" 
+					data-show-transition="left" data-show-delay="200" data-hide-transition="left" data-hide-delay="200" data-width="440">E-book
+            Publishing</h2>
+              <p class="sp-layer sp-black sp-padding slider-para" 
+					data-horizontal="50" data-vertical="20.5%" data-width="580"  data-height="244" 
+					data-show-transition="left" data-show-delay="800" data-hide-transition="left" data-hide-delay="500"> We provide the service of converting PDF to text and doc format.
+            We use latest OCR technology for providing high quality output.
+            Conversion from PDF / TIFF / WPD / HTML / RTF to XML /
+            SGML , HTML TXT and Doc Formats. E Books Conversion : E-Pub,
+            Kindle Compatible Format, Mobi-pocket, Sony Reader Compatible
+            Format and Acrobat PDF e-books. We have knowledge and
+            expertise in typesetting, design and page layout for books and
+            journals publishing. </p>
+            </div>-->
+      </div>
+        </div>
+  </div>
+      <div class="page-section section-aboutus section" id="section2">
+    <div class="container">
+          <h1>about us</h1>
+          <p>Globalen Solutions was founded in the year 2008 headquartered at Puducherry-India as a Pure-play entrepreneurial
+        venture with negligible capital as a focused web solutions &amp; e-publishing company. Ever since then, the company has grown
+        at over 200% and now has worked with multiple clients across 3 continents.</p>
+          <p>Globalen Solutions is close to a 50 member strong team with an existing infrastructure to scale up to 100 professionals.
+        The web being a blend of creativity and technology, the company operates as a Digital Marketing, a Mobile
+        Application creation, a Software Development, an Events Company and a e-publishing &amp;
+        e-book conversions Company. The team comprises of Creative Visualizers, Web Designers, Web Developers, Programmers,
+        Database specialists, Animation Experts, Marketing experts and a dedicated sales and marketing team.
+        Additionally a strong team of Account Managers bridge the gap between various functions and
+        interact with our clients for producing desired results.</p>
+        </div>
+  </div>
+      <div class="page-section section-portfolio section" id="section3">
+    <article class="cols cols-6 technologies">
+          <div class="thumbnail events"> <img src="images/portfolio-web.jpg" alt="portfolio-web.jpg" class="full-image">
+        <h3>Events wat</h3>
+        <h5>Logo  and Web Design</h5>
+      </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail logo"> <img src="images/portfolio-logo.jpg" alt="portfolio-logo.jpg" class="full-image">
+        <h3>Logo <br>
+              Design </h3>
+      </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-reell.jpg" alt="portfolio-reell.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-graphic1.jpg" alt="portfolio-graphic1.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-graphic2.jpg" alt="portfolio-graphic2.jpg" class="full-image">
+        <h3>Graphic <br>
+              Design </h3>
+      </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-graphic3.jpg" alt="portfolio-graphic3.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-graphic4.jpg" alt="portfolio-graphic4.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-web1.jpg" alt="portfolio-web1.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-web2.jpg" alt="portfolio-web2.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-6 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-web3.jpg" alt="portfolio-web2.jpg" class="full-image">
+        <h3 class="black-title">Web Design</h3>
+      </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-epub1.jpg" alt="portfolio-web3.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-6 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-epub2.jpg" alt="portfolio-web3.jpg" class="full-image"> </div>
+        </article>
+    <article class="cols cols-3 technologies">
+          <div class="thumbnail"> <img src="images/portfolio-epub3.jpg" alt="portfolio-web3.jpg" class="full-image">
+        <h3 class="black-title">EPUB<br>
+              DESIGN</h3>
+      </div>
+        </article>
+  </div>
+      <div class="page-section section-team section" id="section4">
+    <div class="container">
+          <h1>Our team</h1>
+          <p>"Our" team are our greatest strength and this is our competitive advantage. At Globalen Solutions we offer quality work life that
+        provides personal and professional satisfaction, pride and mutual respect. We strongly believe that the achievements of our
+        organization are the result of the combined effort of every individual.</p>
+          <p>By fostering a positive work environment, employee involvement, reward and recognition systemswe are able to engage and
+        empower them - a key element to success. We value the intellectual capital our people bring to work with them each day and thus our edge
+        lies in keeping our employees happy. This is reflected in Globalen Solutions's ability to maintain
+        its attrition levels at par with industry average.</p>
+        </div>
+  </div>
+  
+  <!-----Technology page--------------------------------------------->
+  
+ <div class="page-section section-technologies section" id="section5">
+    <div  class="slider-pro">
+          <div class="sp-slides">
+        <div class="sp-slide">
+              <section class="cols cols-6">
+            <div class="thumbnail technologies-slider"> <img src="images/technology-slider.jpg" alt="technology-cordova.jpg" class="full-image">
+                  <h2 class="title-technologies">technologies</h2>
+                  <h3 class="title-technologies">mobileapps</h3>
+                  <h4 class="title-technologies">Technologies to be included in this section</h4>
+                  <a class="button-hold">Hold</a> </div>
+          </section>
+          <section class="cols cols-3">
+            <div class="thumbnail technologies"> <img src="images/technology-cordova.jpg" alt="technology-cordova.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-jquery.jpg" alt="technology-cordova.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-android.jpg" alt="technology-cordova.jpg" class="full-image" > </div>
+          </section>
+          <section class="cols cols-3">
+            <div class="thumbnail technologies"> <img src="images/technology-phonegap.jpg" alt="technology-cordova.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-ionic.jpg" alt="technology-cordova.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-ios.jpg" alt="technology-cordova.jpg" class="full-image"> </div>
+          </section>
+            </div> <!--mobile app page---->
+            
+        <div class="sp-slide">
+              <section class="cols cols-6">
+            <div class="thumbnail technologies-slider"> <img src="images/technology-epublishing.jpg" alt="technology-epublishing.jpg" class="full-image">
+                  <h2 class="title-technologies">technologies</h2>
+                  <h3 class="title-technologies title-epublishing">e publishing</h3>
+                  <h4 class="title-technologies">Technologies to be included in this section</h4>
+                  <a class="button-hold">Hold</a> </div>
+          </section>
+              <section class="cols cols-3">
+            <div class="thumbnail technologies"> <img src="images/technology-html5-1.png" alt="technology-html5-1.png" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-id.jpg" alt="technology-id.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-epub.jpg" alt="technology-epub.jpg" class="full-image"> </div>
+          </section>
+              <section class="cols cols-3">
+            <div class="thumbnail technologies"> <img src="images/technology-xml.jpg" alt="technology-xml.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-css-1.jpg" alt="technology-css-1.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-javascript.jpg" alt="technology-javascript.jpg" class="full-image"> </div>
+          </section>
+            </div>
+        <div class="sp-slide">
+              <section class="cols cols-6">
+            <div class="thumbnail technologies-slider"> <img src="images/technology-webdesign.jpg" alt="technology-webdesign.jpg" class="full-image">
+                  <h2 class="title-technologies">technologies</h2>
+                  <h3 class="title-technologies">webdesign</h3>
+                  <h4 class="title-technologies">Technologies to be included in this section</h4>
+                  <a class="button-hold">Hold</a> </div>
+          </section>
+              <section class="cols cols-3">
+            <div class="thumbnail technologies"> <img src="images/technology-html5.png" alt="technology-html5.png" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-jquery1.jpg" alt="technology-jquery1.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-css.jpg" alt="technology-css.jpg" class="full-image"> </div>
+          </section>
+              <section class="cols cols-3">
+            <div class="thumbnail technologies"> <img src="images/technology-dj.jpg" alt="technology-dj.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-php.jpg" alt="technology-php.jpg" class="full-image"> </div>
+            <div class="thumbnail technologies"> <img src="images/technology-python.jpg" alt="technology-python.jpg" class="full-image"> </div>
+          </section>
+            </div>
+      </div>
+        </div>
+  </div>
+      <div class="page-section section-clients section" id="section6">
+    <div class="container">
+          <h1><span class="title-gray">strong</span> <span class="title-blue">clients</span></h1>
+          <article class="container-inside">
+        <p>"Our" team are our greatest strength and this is our competitive advantage. At Globalen Solutions we offer quality work life that
+              
+              provides personal and professional satisfaction, pride and mutual respect.</p>
+        <ul class="client-container">
+              <li><img src="images/client-mantra.png" alt="client-mantra.png"></li>
+              <li><img src="images/client-hcl.png" alt="client-hcl.png"></li>
+              <li><img src="images/client-newgen.png" alt="client-newgen.png"></li>
+              <li><img src="images/client-samenrico.png" alt="client-samenrico.png"></li>
+              <li><img src="images/client-amnet.png" alt="client-amnet.png"></li>
+              <li><img src="images/client-jouve.png" alt="client-jouve.png"></li>
+              <li><img src="images/client-htc.png" alt="client-htc.png"></li>
+              <li><img src="images/client-quicksort.png" alt="client-quicksort.png"></li>
+            </ul>
+      </article>
+        </div>
+  </div>
+  
+  <div class="section section-getintouch" id="section10">
+          <h1>GET IN TOUCH</h1>
+          <address>
+      #145 M.G. Road, Muthialpet, <br>
+      Puducherry - 605003<br>
+      <a href="mailto:info@globalensolutions.com">info@globalensolutions.com</a> <br>
+      +91-0413-2236880<br/>
+      Mon - Sat 9:00am - 8:00 pm
+      </address>
+          <div class="form-contact">
+        <div class="form-group">
+              <label class="label-name">Name</label>
+              <div class="field-group">
+            <input type="text" class="textbox">
+          </div>
+            </div>
+        <div class="form-group">
+              <label class="label-name">Email</label>
+              <div class="field-group">
+            <input type="text" class="textbox">
+          </div>
+            </div>
+        <div class="form-group">
+              <label class="label-name">Confirm Email</label>
+              <div class="field-group">
+            <input type="text" class="textbox">
+          </div>
+            </div>
+        <div class="form-group">
+              <label class="label-name">Message</label>
+              <div class="field-group">
+            <textarea type="text" class="textbox-area">
+                    </textarea>
+          </div>
+            </div>
+        <div class="button-group">
+              <label class="button-name button-map">View Map</label>
+              <div class="field-group">
+            <input type="submit" class="btn">
+          	  </div>
+          	  <div class="close-button"> <span class="icon-bar"></span> <span class="icon-bar"></span> </div>
+            </div>
+      </div>
+          <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3903.2916363329327!2d79.83053831481168!3d11.95429899152896!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5363de3394621b%3A0xde6b9a56f31d8299!2sGlobalen+Solutions!5e0!3m2!1sen!2sin!4v1461857748852" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <label class="button-name button-back">Back</label>
+      </div>
+        </div>
+    <div class="page-section page-share section" id="section11">
+      <img src="images/logo-mobile2.png"  class="logo-share"> 
+      <h1>AROUND THE WEB</h1>
+      <h5>FOLLOW US ON</h5>
+      
+      <div class="share-icon-container">
+      	<div class="share-icon share-skype">
+        	<a href="#"><i class="icon"><img src="images/icon-skype.png"></i></a>
+        </div>
+        <div class="share-icon share-facebook"><a href="#"><i class="icon"><img src="images/icon-facebook.png"></i></a></div>
+        <div class="share-icon share-googleplus	"><a href=""#><i class="icon"><img src="images/icon-gplus.png"></i></a></div>
+        <div class="share-icon share-linkedin"><a href=""#><i class="icon"><img src="images/icon-in.png"></i></a></div>
+      </div>
+      </div>
+    </div>
+<footer class="footer">Copyright © Globalen Solutions 2015</footer>
+</body>
+</html>
